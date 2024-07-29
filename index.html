@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PSSSF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*  NIME IMPROVE CSS Styles ILI WEB PAGE IWE NAMUONEKANO MZURI */
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        marquee {
+            display: block;
+            margin-top: 10px;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .content p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .content .old, .content .Survivor {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #97b4c0;
+            border-radius: 5px;
+        }
+
+        .content p {
+            color: #48494b;
+        }
+
+        .form-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgb(46, 226, 43);
+            border-radius: 5px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+/*  HERE DECORATE THE INPUT  */
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+/* ADD SOME HOVER EFFECT WHEN USER TOUCH THE BUTTTON*/
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .pdf {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+        }
+/* THIS IS CSS STYLE THAT ENABLE THE WEB TO BE FIX WITH SIZE OF DEVICE*/
+        @media (max-width: 768px) {
+            .pdf {
+                height: auto;
+            }
+        }
+
+        .measure_theory {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .pdf-block {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fcfcfc;
+            border: 1px solid #8d2d2d;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-align: center;
+
+
+        }
+
+
+        .pdf-block:hover {
+            background-color: #7763c0;
+        }
+
+        .pdf-viewer {
+            
+            width: 100%;
+            max-width: 600px;
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+  /* add css style to image */
+  img{
+     max-width: 120px;
+     max-height: 120px;
+     border-radius: 75%;
+     padding: 5px;
+  }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <!--NISAWA KU DECORATE KITU NDANI YA HTML ILA VIZURI KUDECORRECT 
+            OUTSIDE THE BODY ILI KULETA URAHISI BAADE UNAPO HITAJI KUFANYA MATAINANCE YA  CODE ZAKO
+              -->
+        <font size="5"><b>THE UNITED REPUBLIC OF TANZANIA</b></font><br>
+        <marquee>WELCOME TO PUBLIC SERVICE SOCIAL SECURITY FUND (PSSSF)</marquee>
+        <img src="psssf.png" alt="PSSSF Logo">
+    </header>
+    <div class="content">
+        <!--NIME TUMIA TAG YA  <p> </p> ile kuleta muonekano wa paragraph-->
+        <p>Public Service Social Security Fund (PSSSF) was established on August 1st, 2018 under
+        the Public Service Social Security Fund Act (PSSSF Act) of 2018 that provides for contribution to and
+        payments of social security benefits in respect of the service of employees in the public service. The fund helps
+        to keep the contributions of their members and help them to live a better life after retirement in the old age. The fund provides some of 
+        the following benefits.</p>
+        
+        <p style="color:blue;"><b>Old age Pension:</b></p>
+        <p>This is the regular amount of money that people receive from the fund when they have retired from work.</p>
+        
+        <div class="old">
+            <b>Conditions for Old age Pension</b>
+            <p>(a) A member shall have contributed to the Fund for the period of not less than 180 months or 15 years.</p>
+            <p>(b) A member shall attain the retirement age.</p>
+            <p>Formula used for calculation this type of benefit is: -</p>
+            <p>(i) Commuted Pension Gratuity = 1/580 * Months of Service * Average highest Salary of 36 Months * 0.33 * 12.5</p>
+            <p>(ii) Monthly Pension = 1/580 * Months of Service * Average Highest Salary of 36 Months * 0.67 / 12</p>
+        </div>
+
+        <p style="color:blue;"><b>Survivor Pension:</b></p>
+        <p>This is the benefit paid to dependents of a deceased member whose contribution credit is 180 months or more.</p>
+        
+        <div class="Survivor">
+            <b>Conditions for a member to qualify for this benefit are:</b>
+            <p>(a) A deceased member has contributed to the Fund</p>
+            <p>(b) For dependents to be paid survivor benefit, a deceased member must have contributed to the Fund for the period of at least 180 months.</p>
+            <p>(c) If the deceased member has not contributed to the Fund for at least 180 months, dependents shall not be eligible for survivor benefit.</p>
+            <p>(d) Those who are entitled for this benefit are widow or widower, children under 21 years and parents if there is no defendant spouse or children.</p>
+        </div>
+        
+        <p style="color:blue;"><b>Invalidity Pension:</b></p>
+        <p>This is the social insurance payment that may be paid to people who cannot work because of a long term illness or disability.</p>
+        
+        <div class="Invalidity">
+        <p><b>Conditions for a member to qualify for this benefit are:</b></p>
+        <p>(a) A member has been terminated from employment due to physical or mental illness, which is not work-related sickness or accident.</p>
+        <p>(b) A member is below the age of voluntarily retirement</p>
+        <p>(c) A member has contributed to the scheme for at least 36 months of which, 12 months have been contributed in the year preceding the illness.</p>
+        <p>Formula used for calculation this type of benefit is:</p>
+        <p>(i) Invalidity Benefit = 1/580 * Months of Service * Average highest Salary of 36 Months * 0.33 * 12.5</p>
+        </div>
+        
+        <p style="color:blue;"><b>Sickness benefit:</b></p>
+        <p>Is the money paid by the fund to a person who is too sick to work. It's paid to a member who is suffering from sickness or accident not resulting from employment-related injury for more than 3 months and due to that illness, he is being paid half salary.</p>
+        
+        <p>Please enter your information below.</p>
+        
+        <div class="form-container">
+            <form>
+                <label for="first-name"><b>First Name:</b></label>
+                <!-- in input tag we normally put comma (,) before  the word required-->
+                <input type="text" id="first-name" placeholder="Enter your first name", required>
+
+                <label for="last-name"><b>Last Name:</b></label>
+                <input type="text" id="last-name" placeholder="Enter your last name", required>
+
+                <label for="number"><b>NIDA number:</b></label>
+                <input type="number" id="number" name="number" placeholder="Enter NIDA number" maxlength="20" , required>
+
+                <label for="password"><b>Password:</b></label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="4" maxlength="9" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+      <div class="measure_theory">
+        <div class="pdf-block" onclick="togglePdfViewer('jemaViewer')">Clock Open to download the form below.</div>
+        <iframe id="cvViewer" class="pdf-viewer" src="psssf_form.pdf" frameborder="0"></iframe>
+    </div>
+
+
+
+        
+    <marquee>Mission "<b>To provide high quality Social Security Services using competent,
+         motivated staff and the appropriate technology</b>"</marquee>
+
+     <!-- HAPA INABIDI TUTTUMIE JAVA KIDOGO ILI KUIFANYA HIYO WEB KUWA RESPONSIVE 
+      MTU AKI CLICK INAFUNGUKA KWENYE BROWSER YAKE-->
+       <script>
+
+        function togglePdfViewer(id) {
+            let viewer = document.getElementById(id);
+            if (viewer.style.display === "block") {
+                viewer.style.display = "none";
+            } else {
+                viewer.style.display = "block";
+            }
+        }
+
+
+
+       </script>
+
+
+
+</body>
+
+</html>
